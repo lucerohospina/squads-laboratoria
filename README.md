@@ -1,1 +1,1 @@
-# Laboratoria Squad with REACT
+# Laboratoria Squads with REACT
