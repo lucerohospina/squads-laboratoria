@@ -43,6 +43,7 @@ class Sprints extends Component {
         <i onClick={this.changeSprintBack} className="material-icons prefix">chevron_left</i>
         <span>SPRINT {this.state.sprint}</span>
         <i onClick={this.changeSprintForward} className="material-icons prefix">chevron_right</i>
+        <p>Este es un componente que debe de aparecer en lugar del componente LOGIN que esta ahi arriba</p>
       </div>
     )
   }

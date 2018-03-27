@@ -19,8 +19,8 @@ class App extends Component {
       <div className="App">
         <Header/>
         <Login/>
+         <Route path="/Sprints" component={Sprints} />
         <Footer/>
-        <Route path="/Sprints" component={Sprints} />
       </div>
       </Router>
     );
