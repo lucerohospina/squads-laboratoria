@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {
-  NavLink,
-} from 'react-router-dom'
+
 
 class Sprints extends Component {
   constructor(props) {
@@ -43,9 +41,10 @@ class Sprints extends Component {
   render() {
     return (
       <div className="center-align margin-top">
-          <NavLink to={"/Home"} ><i className="material-icons prefix">chevron_left</i></NavLink>
+        <i onClick={this.changeSprintBack} className="material-icons prefix">chevron_left</i>
         <span>SPRINT {this.state.sprint}</span>
         <i onClick={this.changeSprintForward} className="material-icons prefix">chevron_right</i>
+        <p>Este es un componente que debe de aparecer en lugar del componente LOGIN que esta ahi arriba</p>
       </div>
     )
   }
