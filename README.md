@@ -1,1 +1,1 @@
-# Laboratoria Squads
+# Laboratoria Squads with Jquery
