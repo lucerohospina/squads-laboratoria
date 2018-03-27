@@ -1,22 +1,9 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
   NavLink,
-  Switch,
-  Redirect
 } from 'react-router-dom'
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    // states here
-      this.state = {
-        visibility: true
-      }
-    // binding here
-    this.handleVisibility = this.handleVisibility.bind(this);
-  }    
   // lifecycles
   componentDidMount() {
     console.log("Did Mount");
@@ -25,19 +12,10 @@ class Login extends Component {
     console.log("updating");
   }
   // functions here
-  handleVisibility() {
-    console.log("click desde handleVisibility");
-    this.setState((prevState) => {
-      return {
-        visibility: false
-      }
-    })
-  }
   
   render() {
     return (
       <div className="row margin-top">
-        {this.state.visibility &&
         <form className="col s12">
           <div className="row">
             <div className="input-field col s6 offset-s3">
@@ -54,9 +32,9 @@ class Login extends Component {
           </div>
         </div>
         <div className="center-align">
-          <NavLink onClick={this.handleVisibility} to="/Sprints" className="waves-effect waves-light btn">LOGIN</NavLink>
-        </div>
-       </form>}
+        <NavLink to={"/Sprints"}  className="waves-effect waves-light btn">LOGIN</NavLink>
+         </div>
+       </form>
      </div>
     )
   }

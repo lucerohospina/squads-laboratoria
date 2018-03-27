@@ -1,30 +1,23 @@
-import React, { Component } from 'react';
-import Header from './components/Header';
+import React from 'react';
+import Home from './components/home';
 import Sprints from './components/Sprints';
-import Login from './components/Login';
-import Footer from './components/Footer';
-import './App.css';
 import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from 'react-router-dom'
+	BrowserRouter,
+	Route,
+  Switch
+} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-      <div className="App">
-        <Header/>
-        <Login/>
-         <Route path="/Sprints" component={Sprints} />
-        <Footer/>
-      </div>
-      </Router>
-    );
-  }
+const App = (props) => {
+	return (<BrowserRouter>
+		<div>
+			<Switch>
+			<Route  path="/Home" render={() => <Home/>}/>
+
+			<Route  path="/Sprints" render={() => <Sprints/>}/>
+				<Route component={Home}/>
+			</Switch>
+		</div>
+	</BrowserRouter>)
 }
 
 export default App;
