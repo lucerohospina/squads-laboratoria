@@ -9,7 +9,7 @@ import {
 
 const App = (props) => {
 	return (<BrowserRouter>
-		<div>
+		<div className="App">
 			<Switch>
 			<Route  path="/Home" render={() => <Home/>}/>
 
