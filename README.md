@@ -22,3 +22,21 @@ Los squads son de 6 estudiantes, y su distribución debería incluir como mínim
   - 1 estudiante con comunicación eficaz mayor a 70%
   - 1 estudiante con nivel de inglés 2  o 3
   - 1 estudiante con nivel de inglés 0 o 1
+  Datos adicionales
+
+## *Los niveles de inglés se miden así:
+  - 0: Sin conocimientos
+  - 1: Básico
+  - 2: Intermedio
+  - 3: Avanzado
+
+PROYECTO REALIZADO POR:
+
+Frontend:
+  - Lúcero Hospina
+  - Annie
+  - Jennifer
+
+Ux-Designer:
+  - Silvia Puente de la Vega Vilca
+  - Molly Greace
