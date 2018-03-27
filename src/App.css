@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
@@ -60,4 +61,26 @@ dialog::backdrop {
 	width: 100vw;
 	text-align: center;
   }
+=======
+.App {
+  text-align: center;
+}
+
+.header {
+  border-bottom: 1px solid rgb(175, 166, 166); 
+  padding: 2%;
+}
+
+.margin-top {
+  margin-top: 5%;
+}
+
+.footer {
+  border-top: 1px solid rgb(175, 166, 166); 
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+}
+
+>>>>>>> 6195d725e4d5e287b672dd836c4ef5d23fb511c2
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import Header from './components/Header';
 import firebase from 'firebase';
@@ -28,6 +29,28 @@ class App extends Component {
       </div>
     );
   }
+=======
+import React from 'react';
+import Home from './components/home';
+import Sprints from './components/Sprints';
+import {
+	BrowserRouter,
+	Route,
+  Switch
+} from 'react-router-dom';
+
+const App = (props) => {
+	return (<BrowserRouter>
+		<div className="App">
+			<Switch>
+			<Route  path="/Home" render={() => <Home/>}/>
+
+			<Route  path="/Sprints" render={() => <Sprints/>}/>
+				<Route component={Home}/>
+			</Switch>
+		</div>
+	</BrowserRouter>)
+>>>>>>> 6195d725e4d5e287b672dd836c4ef5d23fb511c2
 }
 
 export default App;
