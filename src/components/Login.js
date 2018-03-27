@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
+  NavLink,
 } from 'react-router-dom'
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    // states here
-      
-    // binding here
-  }    
   // lifecycles
   componentDidMount() {
     console.log("Did Mount");
@@ -42,7 +32,7 @@ class Login extends Component {
           </div>
         </div>
         <div className="center-align">
-          <Link to="/Sprints" className="waves-effect waves-light btn">LOGIN</Link>
+        <NavLink to={"/Sprints"}  className="waves-effect waves-light btn">LOGIN</NavLink>
          </div>
        </form>
      </div>
