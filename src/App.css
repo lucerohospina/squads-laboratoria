@@ -67,7 +67,7 @@ dialog::backdrop {
 }
 
 .header {
-  border-bottom: 1px solid rgb(175, 166, 166); 
+  border-bottom: 1px solid #999999; 
   padding: 2%;
 }
 
@@ -76,7 +76,7 @@ dialog::backdrop {
 }
 
 .footer {
-  border-top: 1px solid rgb(175, 166, 166); 
+  border-top: 1px solid #999999; 
   bottom: 0;
   position: fixed;
   width: 100vw;

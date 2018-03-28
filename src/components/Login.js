@@ -84,8 +84,8 @@ class Login extends Component {
           </div>
         </div>
         <div className="center-align">
-        <NavLink to={"/Sprints"}  className="waves-effect waves-light btn">LOGIN</NavLink>
-         </div>
+          <NavLink to={"/Sprints"}  className="waves-effect waves-light btn">LOGIN</NavLink>
+        </div>
        </form>
      </div>
     )
