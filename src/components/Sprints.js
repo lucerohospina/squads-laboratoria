@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Card from './Card';
 
 class Sprints extends Component {
   constructor(props) {
@@ -41,10 +41,17 @@ class Sprints extends Component {
   render() {
     return (
       <div className="center-align margin-top">
+        <p>Selecciona el SPRINT</p>
         <i onClick={this.changeSprintBack} className="material-icons prefix">chevron_left</i>
         <span>SPRINT {this.state.sprint}</span>
         <i onClick={this.changeSprintForward} className="material-icons prefix">chevron_right</i>
-        <p>Este es un componente que debe de aparecer en lugar del componente LOGIN que esta ahi arriba</p>
+        <div className="row">
+          <a className="waves-effect waves-light btn">Reorganizar</a>
+        </div>
+        <div className="row">
+          <a className="waves-effect waves-light btn">Guardar</a>
+        </div>
+        <Card/>
       </div>
     )
   }
