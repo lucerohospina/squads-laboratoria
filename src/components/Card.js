@@ -25,12 +25,12 @@ class Card extends Component {
             <span className="card-title black-text">
             <i className="material-icons">dialpad</i>Squad</span>
             <div id="sq1" className="row container-images dropheigth">
-              <p className="col s4">HOLA 1</p>
-              <p className="col s4">HOLA 2</p>
-              <p className="col s4">HOLA 3</p>
-              <p className="col s4">HOLA 4</p>
-              <p className="col s4">HOLA 5</p>
-              <p className="col s4">HOLA 6</p>            
+              <p className="col s4">STUDENT 1</p>
+              <p className="col s4">STUDENT 2</p>
+              <p className="col s4">STUDENT 3</p>
+              <p className="col s4">STUDENT 4</p>
+              <p className="col s4">STUDENT 5</p>
+              <p className="col s4">STUDENT 6</p>            
             </div>
           </div>
         </div>

@@ -11,6 +11,8 @@ class Sprints extends Component {
     // binding here
       this.changeSprintBack = this.changeSprintBack.bind(this);
       this.changeSprintForward = this.changeSprintForward.bind(this);
+      this.arrangeStudents = this.arrangeStudents.bind(this);
+      this.saveInfo = this.saveInfo.bind(this);
   }
   // lifecycles
   componentDidMount() {
@@ -38,6 +40,14 @@ class Sprints extends Component {
     });
   }
 
+  arrangeStudents() {
+    console.log('click desde arrangeStudents');
+  }
+
+  saveInfo() {
+    console.log('click desde saveInfo');
+  }
+
   render() {
     return (
       <div className="center-align margin-top">
@@ -46,10 +56,10 @@ class Sprints extends Component {
         <span>SPRINT {this.state.sprint}</span>
         <i onClick={this.changeSprintForward} className="material-icons prefix">chevron_right</i>
         <div className="row">
-          <a className="waves-effect waves-light btn">Reorganizar</a>
+          <a className="waves-effect waves-light btn" onClick={this.arrangeStudents}>Reorganizar</a>
         </div>
         <div className="row">
-          <a className="waves-effect waves-light btn">Guardar</a>
+          <a className="waves-effect waves-light btn" onClick={this.saveInfo}>Guardar</a>
         </div>
         <Card/>
       </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import Home from './components/home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
 import Sprints from './components/Sprints';
 import {
 	BrowserRouter,
